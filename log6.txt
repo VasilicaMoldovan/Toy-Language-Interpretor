@@ -1,0 +1,3145 @@
+ExeStack:
+Ref(int) v New( v->20 ) Ref(Ref(int)) a New( a->v ) Print(Read(v)) Print(Read(Read(a))+5)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+ExeStack:
+Print(Read(Read(a))+5)
+Ref(int) v New( v->20 ) Ref(Ref(int)) a New( a->v ) Print(Read(v))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+ExeStack:
+Print(Read(Read(a))+5)
+Print(Read(v))
+Ref(int) v New( v->20 ) Ref(Ref(int)) a New( a->v )
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+ExeStack:
+Print(Read(Read(a))+5)
+Print(Read(v))
+New( a->v )
+Ref(int) v New( v->20 ) Ref(Ref(int)) a
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+ExeStack:
+Print(Read(Read(a))+5)
+Print(Read(v))
+New( a->v )
+Ref(Ref(int)) a
+Ref(int) v New( v->20 )
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+ExeStack:
+Print(Read(Read(a))+5)
+Print(Read(v))
+New( a->v )
+Ref(Ref(int)) a
+New( v->20 )
+Ref(int) v
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+ExeStack:
+Print(Read(Read(a))+5)
+Print(Read(v))
+New( a->v )
+Ref(Ref(int)) a
+New( v->20 )
+Symbol Table:
+v --> ( 0, int )
+Out:
+File table:
+
+Heap:
+
+ExeStack:
+Print(Read(Read(a))+5)
+Print(Read(v))
+New( a->v )
+Ref(Ref(int)) a
+Symbol Table:
+v --> ( 1, int )
+Out:
+File table:
+
+Heap:
+1 --> 20
+
+ExeStack:
+Print(Read(Read(a))+5)
+Print(Read(v))
+New( a->v )
+Symbol Table:
+a --> ( 0, Ref(int) )
+v --> ( 1, int )
+Out:
+File table:
+
+Heap:
+1 --> 20
+
+ExeStack:
+Print(Read(Read(a))+5)
+Print(Read(v))
+Symbol Table:
+a --> ( 2, Ref(int) )
+v --> ( 1, int )
+Out:
+File table:
+
+Heap:
+1 --> 20
+2 --> ( 1, int )
+
+ExeStack:
+Print(Read(Read(a))+5)
+Symbol Table:
+a --> ( 2, Ref(int) )
+v --> ( 1, int )
+Out:
+20
+File table:
+
+Heap:
+1 --> 20
+2 --> ( 1, int )
+
+ExeStack:
+Symbol Table:
+a --> ( 2, Ref(int) )
+v --> ( 1, int )
+Out:
+20
+25
+File table:
+
+Heap:
+1 --> 20
+2 --> ( 1, int )
+
+Thread id: 1 ExeStack:
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30) v=32 Print(v) Print(Read(a)) Print(v) Print(Read(a))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30) v=32 Print(v) Print(Read(a)) Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30) v=32 Print(v) Print(Read(a)) Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30) v=32 Print(v) Print(Read(a))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30) v=32 Print(v) Print(Read(a))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30) v=32 Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30) v=32 Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30) v=32
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30) v=32
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+int v Ref(int) a v=10 New( a->22 )
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+int v Ref(int) a v=10 New( a->22 )
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+int v Ref(int) a v=10
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+int v Ref(int) a v=10
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+v=10
+int v Ref(int) a
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+v=10
+int v Ref(int) a
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+v=10
+Ref(int) a
+int v
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+v=10
+Ref(int) a
+int v
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+v=10
+Ref(int) a
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+v=10
+Ref(int) a
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+v=10
+Symbol Table:
+a --> ( 0, int )
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+v=10
+Symbol Table:
+a --> ( 0, int )
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+Symbol Table:
+a --> ( 0, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+New( a->22 )
+Symbol Table:
+a --> ( 0, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30)
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+WriteHeap(a->30)
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+WriteHeap(a->30)
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+32
+22
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 1 ExeStack:
+int v v=10 while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+v=10 while(v>0)execute(Print(v) v=v-1) 
+int v
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+v=10 while(v>0)execute(Print(v) v=v-1) 
+int v
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+v=10 while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+v=10 while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=10
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=10
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 10
+Out:
+10
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 10
+Out:
+10
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 9
+Out:
+10
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 9
+Out:
+10
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 9
+Out:
+10
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 9
+Out:
+10
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 9
+Out:
+10
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 9
+Out:
+10
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 9
+Out:
+10
+9
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 9
+Out:
+10
+9
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 8
+Out:
+10
+9
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 8
+Out:
+10
+9
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 8
+Out:
+10
+9
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 8
+Out:
+10
+9
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 8
+Out:
+10
+9
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 8
+Out:
+10
+9
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 8
+Out:
+10
+9
+8
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 8
+Out:
+10
+9
+8
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 7
+Out:
+10
+9
+8
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 7
+Out:
+10
+9
+8
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 7
+Out:
+10
+9
+8
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 7
+Out:
+10
+9
+8
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 7
+Out:
+10
+9
+8
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 7
+Out:
+10
+9
+8
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 7
+Out:
+10
+9
+8
+7
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 7
+Out:
+10
+9
+8
+7
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 6
+Out:
+10
+9
+8
+7
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 6
+Out:
+10
+9
+8
+7
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 6
+Out:
+10
+9
+8
+7
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 6
+Out:
+10
+9
+8
+7
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 6
+Out:
+10
+9
+8
+7
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 6
+Out:
+10
+9
+8
+7
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 6
+Out:
+10
+9
+8
+7
+6
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 6
+Out:
+10
+9
+8
+7
+6
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 5
+Out:
+10
+9
+8
+7
+6
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 5
+Out:
+10
+9
+8
+7
+6
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 5
+Out:
+10
+9
+8
+7
+6
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 5
+Out:
+10
+9
+8
+7
+6
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 5
+Out:
+10
+9
+8
+7
+6
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 5
+Out:
+10
+9
+8
+7
+6
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 5
+Out:
+10
+9
+8
+7
+6
+5
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 5
+Out:
+10
+9
+8
+7
+6
+5
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 4
+Out:
+10
+9
+8
+7
+6
+5
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 4
+Out:
+10
+9
+8
+7
+6
+5
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 4
+Out:
+10
+9
+8
+7
+6
+5
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 4
+Out:
+10
+9
+8
+7
+6
+5
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 4
+Out:
+10
+9
+8
+7
+6
+5
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 4
+Out:
+10
+9
+8
+7
+6
+5
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 4
+Out:
+10
+9
+8
+7
+6
+5
+4
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 4
+Out:
+10
+9
+8
+7
+6
+5
+4
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 3
+Out:
+10
+9
+8
+7
+6
+5
+4
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 3
+Out:
+10
+9
+8
+7
+6
+5
+4
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 3
+Out:
+10
+9
+8
+7
+6
+5
+4
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 3
+Out:
+10
+9
+8
+7
+6
+5
+4
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 3
+Out:
+10
+9
+8
+7
+6
+5
+4
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 3
+Out:
+10
+9
+8
+7
+6
+5
+4
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 3
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 3
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 2
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 2
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 2
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 2
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 2
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 2
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 2
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 2
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 1
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 1
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 1
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Print(v) v=v-1
+Symbol Table:
+v --> 1
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 1
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Print(v)
+Symbol Table:
+v --> 1
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 1
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+v=v-1
+Symbol Table:
+v --> 1
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 0
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+while(v>0)execute(Print(v) v=v-1) 
+Symbol Table:
+v --> 0
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Symbol Table:
+v --> 0
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Symbol Table:
+v --> 0
+Out:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a)) Print(v) Print(Read(a))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a)) Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a)) Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+int v Ref(int) a v=10 New( a->22 )
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+int v Ref(int) a v=10 New( a->22 )
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+int v Ref(int) a v=10
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+int v Ref(int) a v=10
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+int v Ref(int) a
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+int v Ref(int) a
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Ref(int) a
+int v
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Ref(int) a
+int v
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Ref(int) a
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Ref(int) a
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Symbol Table:
+a --> ( 0, int )
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Symbol Table:
+a --> ( 0, int )
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+Symbol Table:
+a --> ( 0, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+Symbol Table:
+a --> ( 0, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+WriteHeap(a->30)
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+WriteHeap(a->30)
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 2 ExeStack:
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+32
+22
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 1 ExeStack:
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a)) Print(v) Print(Read(a))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a)) Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a)) Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v) Print(Read(a))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32 Print(v)
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30)) v=32
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+int v Ref(int) a v=10 New( a->22 ) fork(WriteHeap(a->30))
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+int v Ref(int) a v=10 New( a->22 )
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+int v Ref(int) a v=10 New( a->22 )
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+int v Ref(int) a v=10
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+int v Ref(int) a v=10
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+int v Ref(int) a
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+int v Ref(int) a
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Ref(int) a
+int v
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Ref(int) a
+int v
+Symbol Table:
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Ref(int) a
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Ref(int) a
+Symbol Table:
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Symbol Table:
+a --> ( 0, int )
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+v=10
+Symbol Table:
+a --> ( 0, int )
+v --> 0
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+Symbol Table:
+a --> ( 0, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+New( a->22 )
+Symbol Table:
+a --> ( 0, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 1 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+fork(WriteHeap(a->30))
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+WriteHeap(a->30)
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+v=32
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+WriteHeap(a->30)
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Symbol Table:
+a --> ( 1, int )
+v --> 10
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Print(v)
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Print(v)
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Print(Read(a))
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+32
+File table:
+
+Heap:
+1 --> 22
+
+Thread id: 3 ExeStack:
+Symbol Table:
+a --> ( 1, int )
+v --> 32
+Out:
+32
+22
+32
+22
+File table:
+
+Heap:
+1 --> 22
+

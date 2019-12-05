@@ -1,0 +1,137 @@
+ExeStack:
+int a log1.txt  read a from log1.txt Print(a) (If a Then  read a from log1.txt Print(a) Else Print(0))  close log1.txt
+Symbol Table:
+Out:
+File table:
+
+Heap:
+{0=null}
+ExeStack:
+ read a from log1.txt Print(a) (If a Then  read a from log1.txt Print(a) Else Print(0))  close log1.txt
+int a log1.txt
+Symbol Table:
+Out:
+File table:
+
+Heap:
+{}
+ExeStack:
+ read a from log1.txt Print(a) (If a Then  read a from log1.txt Print(a) Else Print(0))  close log1.txt
+log1.txt
+int a
+Symbol Table:
+Out:
+File table:
+
+Heap:
+{}
+ExeStack:
+ read a from log1.txt Print(a) (If a Then  read a from log1.txt Print(a) Else Print(0))  close log1.txt
+log1.txt
+Symbol Table:
+a --> 0
+Out:
+File table:
+
+Heap:
+{}
+ExeStack:
+ read a from log1.txt Print(a) (If a Then  read a from log1.txt Print(a) Else Print(0))  close log1.txt
+Symbol Table:
+a --> 0
+Out:
+File table:
+log1.txt --> java.io.BufferedReader@9807454
+
+Heap:
+{}
+ExeStack:
+Print(a) (If a Then  read a from log1.txt Print(a) Else Print(0))  close log1.txt
+ read a from log1.txt
+Symbol Table:
+a --> 0
+Out:
+File table:
+log1.txt --> java.io.BufferedReader@9807454
+
+Heap:
+{}
+ExeStack:
+Print(a) (If a Then  read a from log1.txt Print(a) Else Print(0))  close log1.txt
+Symbol Table:
+a --> 2
+Out:
+File table:
+log1.txt --> java.io.BufferedReader@9807454
+
+Heap:
+{}
+ExeStack:
+(If a Then  read a from log1.txt Print(a) Else Print(0))  close log1.txt
+Print(a)
+Symbol Table:
+a --> 2
+Out:
+File table:
+log1.txt --> java.io.BufferedReader@9807454
+
+Heap:
+{}
+ExeStack:
+(If a Then  read a from log1.txt Print(a) Else Print(0))  close log1.txt
+Symbol Table:
+a --> 2
+Out:
+2
+File table:
+log1.txt --> java.io.BufferedReader@9807454
+
+Heap:
+{}
+ExeStack:
+ close log1.txt
+(If a Then  read a from log1.txt Print(a) Else Print(0))
+Symbol Table:
+a --> 2
+Out:
+2
+File table:
+log1.txt --> java.io.BufferedReader@9807454
+
+Heap:
+{}
+ExeStack:
+ close log1.txt
+Print(0)
+Symbol Table:
+a --> 2
+Out:
+2
+File table:
+log1.txt --> java.io.BufferedReader@9807454
+
+Heap:
+{}
+ExeStack:
+ close log1.txt
+Symbol Table:
+a --> 2
+Out:
+2
+0
+File table:
+log1.txt --> java.io.BufferedReader@9807454
+
+Heap:
+{}
+ExeStack:
+Symbol Table:
+a --> 2
+Out:
+2
+0
+File table:
+log1.txt --> java.io.BufferedReader@9807454
+
+Heap:
+{}

@@ -1,0 +1,76 @@
+ExeStack:
+bool a;int v;a=true;(If a Then v=2 Else v=3);Print(v)
+SymTable:
+Out:
+
+ExeStack:
+int v;a=true;(If a Then v=2 Else v=3);Print(v)
+bool a
+SymTable:
+Out:
+
+ExeStack:
+int v;a=true;(If a Then v=2 Else v=3);Print(v)
+SymTable:
+a --> true
+Out:
+
+ExeStack:
+a=true;(If a Then v=2 Else v=3);Print(v)
+int v
+SymTable:
+a --> true
+Out:
+
+ExeStack:
+a=true;(If a Then v=2 Else v=3);Print(v)
+SymTable:
+a --> true
+v --> 0
+Out:
+
+ExeStack:
+(If a Then v=2 Else v=3);Print(v)
+a=true
+SymTable:
+a --> true
+v --> 0
+Out:
+
+ExeStack:
+(If a Then v=2 Else v=3);Print(v)
+SymTable:
+a --> true
+v --> 0
+Out:
+
+ExeStack:
+Print(v)
+(If a Then v=2 Else v=3)
+SymTable:
+a --> true
+v --> 0
+Out:
+
+ExeStack:
+Print(v)
+v=2
+SymTable:
+a --> true
+v --> 0
+Out:
+
+ExeStack:
+Print(v)
+SymTable:
+a --> true
+v --> 2
+Out:
+
+ExeStack:
+SymTable:
+a --> true
+v --> 2
+Out:
+2
+
