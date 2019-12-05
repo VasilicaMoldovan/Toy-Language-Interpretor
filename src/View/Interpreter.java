@@ -158,7 +158,7 @@ public class Interpreter {
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
-        menu.addCommand(new RunExample("1",ex1.toString(),firstController));
+        //menu.addCommand(new RunExample("1",ex1.toString(),firstController));
         menu.addCommand(new RunExample("2",ex2.toString(),secondController));
         menu.addCommand(new RunExample("3",ex3.toString(),thirdController));
         menu.addCommand(new RunExample("4",ex4.toString(),controller4));
@@ -168,7 +168,7 @@ public class Interpreter {
         menu.addCommand(new RunExample("8",ex8.toString(),controller8));
         menu.addCommand(new RunExample("9",ex9.toString(),controller9));
         menu.addCommand(new RunExample("10",ex10.toString(),controller10));
-        menu.addCommand(new RunExample("11",ex11.toString(),controller11));
+        menu.addCommand(new RunExample("1",ex11.toString(),controller11));
 
 
         menu.show();

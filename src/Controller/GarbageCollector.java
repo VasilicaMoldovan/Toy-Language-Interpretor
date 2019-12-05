@@ -23,8 +23,7 @@ public class GarbageCollector {
 
     public List<Integer> getAddressFromTables(List<PrgState> programs){
         return programs.stream()
-                .map(prgState -> prgState.getSymTable().getContent().stream())
-                .flatMap(Function.identity())
+                .flatMap(prgState -> prgState.getSymTable().getContent().stream())
                 .collect(Collectors.toList())
                 .stream()
                 .filter(element -> element instanceof RefValue)
