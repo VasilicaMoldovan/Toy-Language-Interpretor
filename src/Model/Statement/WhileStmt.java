@@ -7,6 +7,8 @@ import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
 import Model.PrgState;
 import Model.Types.BoolType;
+import Model.Types.IntType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Value;
 
@@ -48,5 +50,17 @@ public class WhileStmt implements IStmt{
     @Override
     public String toString(){
         return "while(" + expression.toString() + ")execute(" + statement.toString() + ") ";
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws
+            MyException{
+        Type typexp=expression.typecheck(typeEnv);
+        if (typexp.equals(new IntType()) || typexp.equals(new BoolType())) {
+            statement.typecheck(typeEnv.deepcopy());
+            return typeEnv;
+        }
+        else
+            throw new MyException("The condition of while has not the type bool");
     }
 }

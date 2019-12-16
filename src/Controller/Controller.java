@@ -2,6 +2,7 @@ package Controller;
 
 import Model.Exceptions.MyException;
 import Model.PrgState;
+import Model.Statement.IStmt;
 import Repository.IRepository;
 
 import java.util.ArrayList;
@@ -26,6 +27,10 @@ public class Controller {
    public ArrayList removeCompletedProgram(ArrayList<PrgState> inProgramList){
         return (ArrayList)inProgramList.stream().filter(PrgState::isNotCompleted)
                 .collect(Collectors.toList());
+   }
+
+   public IStmt getOriginalProgram(){
+        return myController.getCurrentProgramState().getOriginalProgram();
    }
 
     public void oneStepForAllPrograms(List<PrgState> programs) throws MyException,InterruptedException

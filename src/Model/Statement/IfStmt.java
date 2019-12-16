@@ -1,9 +1,13 @@
 package Model.Statement;
 
 import Model.*;
+import Model.DataStructures.MyIDictionary;
 import Model.DataStructures.MyIStack;
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
+import Model.Types.BoolType;
+import Model.Types.IntType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Value;
 
@@ -45,4 +49,18 @@ public class IfStmt implements IStmt {
     public IStmt deepCopy(){
         return new IfStmt(exp, thenS, elseS);
     }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws
+            MyException{
+        Type typexp=exp.typecheck(typeEnv);
+        if (typexp.equals(new IntType()) || typexp.equals(new BoolType())) {
+            thenS.typecheck(typeEnv.deepcopy());
+            elseS.typecheck(typeEnv.deepcopy());
+            return typeEnv;
+        }
+        else
+            throw new MyException("The condition of IF has not the type bool");
+    }
 }
+

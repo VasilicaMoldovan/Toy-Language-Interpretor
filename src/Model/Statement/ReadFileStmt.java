@@ -1,9 +1,13 @@
 package Model.Statement;
 
+import Model.DataStructures.MyIDictionary;
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
 import Model.PrgState;
 import Model.Types.IntType;
+import Model.Types.RefType;
+import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.IntValue;
 import Model.Values.StringValue;
 import Model.Values.Value;
@@ -62,5 +66,15 @@ public class ReadFileStmt implements IStmt {
         else
             throw new MyException("Invalid variable name");
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws
+            MyException{
+        Type typexp = expression.typecheck(typeEnv);
+        if (!typexp.equals(new StringType()))
+            throw new MyException("Read stmt: right hand side and left hand side have different types ");
+        else
+            return typeEnv;
     }
 }

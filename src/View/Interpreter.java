@@ -150,6 +150,7 @@ public class Interpreter {
                 new PrintStmt(new ReadHeapExp(new VarExp("a"))));
 
 
+
         ArrayList<PrgState> prg11 = new ArrayList<>();
         prg11.add(new PrgState(ex11));
         IRepository repo11 = new InMemRepo(prg11, "log8.txt");

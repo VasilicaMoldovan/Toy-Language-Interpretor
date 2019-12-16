@@ -1,9 +1,11 @@
 package Model.Statement;
 
+import Model.DataStructures.MyIDictionary;
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
 import Model.PrgState;
 import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.StringValue;
 import Model.Values.Value;
 
@@ -48,5 +50,12 @@ public class OpenRFileStmt implements IStmt {
     @Override
     public String toString(){
         return expression.toString();
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws
+            MyException{
+       expression.typecheck(typeEnv.deepcopy());
+       return typeEnv;
     }
 }

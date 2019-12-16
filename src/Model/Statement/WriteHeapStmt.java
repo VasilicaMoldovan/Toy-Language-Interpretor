@@ -1,9 +1,11 @@
 package Model.Statement;
 
+import Model.DataStructures.MyIDictionary;
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
 import Model.PrgState;
 import Model.Types.RefType;
+import Model.Types.Type;
 import Model.Values.RefValue;
 import Model.Values.Value;
 
@@ -49,5 +51,16 @@ public class WriteHeapStmt implements IStmt {
     @Override
     public String toString(){
         return "WriteHeap(" + varName + "->" + expression.toString() + ")";
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String,Type> typeEnv) throws
+            MyException{
+        Type typevar = typeEnv.lookup(varName);
+        Type typexp = expression.typecheck(typeEnv);
+        if (typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else
+            throw new MyException("NEW stmt: right hand side and left hand side have different types ");
     }
 }

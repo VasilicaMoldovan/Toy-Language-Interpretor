@@ -1,7 +1,10 @@
 package View;
 
 import Controller.Controller;
+import Model.DataStructures.MyDictionary;
+import Model.DataStructures.MyIDictionary;
 import Model.Exceptions.MyException;
+import Model.Types.Type;
 
 public class RunExample extends Command {
     private Controller ctrl;
@@ -12,6 +15,8 @@ public class RunExample extends Command {
     @Override
     public void execute() {
         try{
+            MyIDictionary<String, Type> typeEnv = new MyDictionary<>();
+            ctrl.getOriginalProgram().typecheck(typeEnv);
             ctrl.allStep(); }
         catch (MyException error) {
             System.out.println(error.getMessage());
